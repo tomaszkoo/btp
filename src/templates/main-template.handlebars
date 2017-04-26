@@ -1,0 +1,73 @@
+<header>
+	<div class="topbar">
+		<div id="logo" role="logo" class="topbar__title">
+			<h1>{{title}}</h1>
+		</div>
+		<div class="topbar__menu">
+			<div class="search" role="search"></div>
+			<nav>
+				<div class="navbar navbar--close">
+					<div id="navbarIcon">
+						<div class="navbar-line"></div>
+						<div class="navbar-line"></div>
+						<div class="navbar-line"></div>
+					</div>
+				</div>
+				<div class="navbar navbar--open">
+					{{#list nav}}
+					<a href="{{url}}">{{title}}</a> {{/list}}
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="banner__title" id="bannerTitle">
+			{{#with banner}}
+			<h2>{{title}}</h2>
+			<p>{{description}}</p>
+			{{/with}}
+		</div>
+		<div class="banner__image">
+			{{#ifMobile}}
+			<img src="src/img/mobile_0001_iPhone.png" alt="iPhone" /> 
+			{{else}}
+			<img src="src/img/web_0007_iPhone.png" alt="iPhone" /> 
+			{{/ifMobile}}
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-6">
+				{{#with content}}
+				<h3>{{title}}</h3>
+				<p>{{{description}}}</p>
+				{{/with}}
+			</div>
+			<div class="col-md-6 desk-margint150">
+				{{#with content}}
+				<p>{{{descriptionExtra}}}</p>
+				{{/with}}
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="tiles">
+			{{#each tiles}}
+			<div class="tile" style="background-color:{{color}}">
+				<div class="tile__title">
+					<h4>{{title}}</h4>
+				</div>
+				<div class="tile__description">
+					<p>{{description}}</p>
+				</div>
+				<div class="tile__link">
+					<a href="{{url}}">{{alt}}</a>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</section>
+</main>

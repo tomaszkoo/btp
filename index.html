@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BesideThePark</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="src/css/style.css" />
+	<script type="text/javascript" src="src/js/handlebars-v4.0.5.js"></script>
+	<script type="text/javascript" src="src/js/main-template.js"></script>
+	<script type="text/javascript" src="src/data/main-data.js"></script>
+	<script type="text/javascript" src="src/js/handlebars-helpers.js"></script>
+	<script defer type="text/javascript" src="src/js/main.js"></script>
+</head>
+<body>
+
+	<div id="root"></div>
+
+	<script type="text/javascript">
+		const template = Handlebars.templates['main-template'];
+		const templateData = template(data);
+		document.getElementById("root").innerHTML += templateData;
+	</script>
+
+</body>
+</html>
