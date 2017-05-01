@@ -55,11 +55,11 @@ h3 {
   padding-bottom: 20px;
   line-height: 42px; }
 
-.desk-margint150 {
+.desk--margint150 {
   margin-top: 150px; }
 
 @media (max-width: 768px) {
-  .desk-margint150 {
+  .desk--margint150 {
     margin-top: 0; } }
 header {
   width: 100%;
@@ -189,28 +189,28 @@ main {
     display: none; } }
 .tiles {
   margin-top: 80px; }
-  .tiles .tile {
+  .tiles .tiles__tile {
     display: block;
     float: left;
     padding: 50px 30px;
     background-color: #43463e; }
-    .tiles .tile:nth-child(2n+1) {
+    .tiles .tiles__tile:nth-child(2n+1) {
       width: calc(70% - 60px); }
-    .tiles .tile:nth-child(2n) {
+    .tiles .tiles__tile:nth-child(2n) {
       width: calc(30% - 60px); }
-    .tiles .tile .tile__title {
+    .tiles .tiles__tile .tile__title {
       color: #fff;
       font-size: 30px; }
-    .tiles .tile .tile__description {
+    .tiles .tiles__tile .tile__description {
       color: #fff;
       width: 50%; }
-    .tiles .tile .tile__link a {
+    .tiles .tiles__tile .tile__link a {
       text-decoration: none;
       font-weight: bold;
       color: #fff; }
 
 @media (max-width: 768px) {
-  .tiles .tile:nth-child(n) {
+  .tiles .tiles__tile:nth-child(n) {
     width: calc(100% - 60px); }
-    .tiles .tile:nth-child(n) .tile__description {
+    .tiles .tiles__tile:nth-child(n) .tile__description {
       width: 100%; } }

@@ -2,7 +2,11 @@ const data = {
     title: 'Beside the park',
     banner: {
         title: 'Lorem impsum',
-        description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.'
+        description: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.',
+        image: {
+            desktop: 'Web_0007_iPhone.png',
+            mobile: 'mobile_0001_iPhone.png',
+        }
     },
     content: {
         title: 'Lorem impsum',

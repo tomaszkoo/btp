@@ -7,15 +7,12 @@
 			<div class="search" role="search"></div>
 			<nav>
 				<div class="navbar navbar--close">
-					<div id="navbarIcon">
-						<div class="navbar-line"></div>
-						<div class="navbar-line"></div>
-						<div class="navbar-line"></div>
-					</div>
+					{{> navigation-icon }}
 				</div>
 				<div class="navbar navbar--open">
 					{{#list nav}}
-					<a href="{{url}}">{{title}}</a> {{/list}}
+					<a href="{{url}}">{{title}}</a> 
+					{{/list}}
 				</div>
 			</nav>
 		</div>
@@ -29,9 +26,9 @@
 		</div>
 		<div class="banner__image">
 			{{#ifMobile}}
-			<img src="src/img/mobile_0001_iPhone.png" alt="iPhone" /> 
+			<img src="img/{{banner.image.mobile}}" alt="iPhone" /> 
 			{{else}}
-			<img src="src/img/web_0007_iPhone.png" alt="iPhone" /> 
+			<img src="img/{{banner.image.desktop}}" alt="iPhone" /> 
 			{{/ifMobile}}
 		</div>
 	</div>
@@ -46,7 +43,7 @@
 				<p>{{{description}}}</p>
 				{{/with}}
 			</div>
-			<div class="col-md-6 desk-margint150">
+			<div class="col-md-6 desk--margint150">
 				{{#with content}}
 				<p>{{{descriptionExtra}}}</p>
 				{{/with}}
@@ -56,7 +53,7 @@
 	<section class="container">
 		<div class="tiles">
 			{{#each tiles}}
-			<div class="tile" style="background-color:{{color}}">
+			<div class="tiles__tile" style="background-color:{{color}}">
 				<div class="tile__title">
 					<h4>{{title}}</h4>
 				</div>

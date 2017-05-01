@@ -1,5 +1,4 @@
 // animation
-
 const props = {
 	startProps: {
 		opacity: 0,
@@ -34,3 +33,14 @@ function animate(el) {
 }
 
 animate('bannerTitle');
+
+// menu
+const navElement = document.getElementsByClassName('navbar');
+
+var i;
+for (i = 0; i < navElement.length; i++) {
+	navElement[0].addEventListener('click', ()=> {
+    	navElement[0].style.display = 'none';
+		navElement[1].style.display = 'block';
+	});
+};

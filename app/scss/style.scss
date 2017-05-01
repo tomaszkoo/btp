@@ -61,11 +61,11 @@ h3 {
 	padding-bottom:20px;
 	line-height:42px;
 }
-.desk-margint150 {
+.desk--margint150 {
 	margin-top:150px;
 }
 @media(max-width:768px) {
-	.desk-margint150 {
+	.desk--margint150 {
 		margin-top:0;
 	}
 }
@@ -251,7 +251,7 @@ main {
 
 .tiles {
 	margin-top:80px;
-	.tile {
+	.tiles__tile {
 		display:block;
 		float:left;
 		padding:50px 30px;
@@ -281,7 +281,7 @@ main {
 }
 @media(max-width: 768px) {
 	.tiles {
-		.tile:nth-child(n) {
+		.tiles__tile:nth-child(n) {
 			width:calc(100% - 60px);
 			.tile__description {
 				width:100%;
